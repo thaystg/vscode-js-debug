@@ -830,7 +830,6 @@ export class Thread implements IVariableStoreLocationProvider {
     this._removeAllScripts();
     this._breakpointManager.executionContextWasCleared();
     if (this._pausedDetails) this.onResumed();
-    this._executionContexts.clear();
   }
 
   _ensureDebuggerEnabledAndRefreshDebuggerId() {
